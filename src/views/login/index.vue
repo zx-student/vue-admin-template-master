@@ -80,6 +80,9 @@ export default {
       immediate: true
     }
   },
+  mounted() {
+    this.getTable()
+  },
   methods: {
     showPwd() {
       if (this.passwordType === 'password') {
@@ -106,6 +109,11 @@ export default {
           return false
         }
       })
+    },
+    getTable() {
+      let params = {
+
+      }
     }
   }
 }
